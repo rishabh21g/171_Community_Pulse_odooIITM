@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import { UserProvider } from "./context/User";
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <UserProvider>
+      <div>HomePage</div>
+    </UserProvider>
+  );
+};
 
-export default HomePage
+export default HomePage;
