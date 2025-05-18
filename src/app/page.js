@@ -1,9 +1,13 @@
-import Image from "next/image";
+import React from "react";
+import { UserProvider } from "./context/User";
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <>
-    hello world
-    </>
+    <UserProvider>
+      <div className="text-3xl font-bold underline">HomePage Community Pulse</div>
+
+    </UserProvider>
   );
-}
+};
+
+export default HomePage;
